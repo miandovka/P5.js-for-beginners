@@ -1,18 +1,29 @@
-// this is a variable, it's still "empty" yet
-let capture;
+let video;
+let vScale = 16;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-
-	// we tell the variable to capture a video
-	capture = createCapture(VIDEO);
-	// we tell the video which resolution it should have
-  capture.size(320, 240);
+	pixelDensity(1);
+	video = createCapture(VIDEO);
+	video.size(width/vScale, height/vScale);
 }
 
 function draw() {
-	// we draw the video as image an tell it position and size
-	image(capture, 0, 0, width, height);
-	
-	capture.loadPixels();  
+	video.loadPixels();  
+	for(let y = 0; y < video.height; y++) {
+		for(let x = 0; x < video.width; x++) {
+
+			let index = (x + y * video.width) * 4;
+			let r = video.pixels[index+0];
+			let g = video.pixels[index+1];
+			let b = video.pixels[index+2];
+			var color = (r+g+b)/3;
+
+			noFill();
+			stroke(color);
+			strokeWeight(10);
+			rect(x*vScale, y*vScale, vScale, vScale);
+		}
+	}
+
 }
