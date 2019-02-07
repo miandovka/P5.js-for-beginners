@@ -44,9 +44,9 @@ project
     └─── same for the other templates
 ```
 
-<!--## P5.js in General
+## P5.js
 
-P5.js is generally divided into two blocks - setup & draw - like in the following example:
+P5.js is generally divided into two blocks - setup & draw. Setup will be executed once at the beginning. Draw is a constant loop playing 60 times a second.
 
 ```
 function setup() {
@@ -58,9 +58,6 @@ function draw() {
 }
 ```
 
-The setup block is often use to setup parts of the code that stay the same for the duration of the program. In all P5.js sketches, the size of the canvas (the drawing surface) must be defined in the head.
-
-Unless otherwise defined, the draw block runs 60 times a second. Thingschanged here will be displayed -->
 
 ## Outlook
 
