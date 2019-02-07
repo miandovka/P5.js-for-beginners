@@ -3,13 +3,19 @@ this is the repo for the P5.js for beginners workshop during PCD 2019 Basel
 
 ## Setup
 
-### Visual Studio
+Let's first download a code editor of your choice and install a live server plugin. This simulates that your sketch is already in the web.
 
-tba
+### Visual Studio Code
+
+1. [Install Visual Studio Code](https://code.visualstudio.com/)
+2. Go to Plugins and search for Live Server by Ritwick Dey -> Install
+3. Open current project folder in Visual Studio Code
+4. In the bottom right corner click -> Go Live
+5. A browser window will open showing the project.
 
 ### Atom
 
-1. [Install Atom] (https://atom.io/)
+1. [Install Atom](https://atom.io/)
 2. Install atom-live-server from Preferences -> Install -> Install Packages
 3. Open current project folder in Atom
 4. From Menu Bar open Packages -> atom-live-server -> run ....
