@@ -65,10 +65,11 @@ function draw() {
 ```
 ### 2. Coordinate system and units of measure:
 
-In P5.js you work with a `x` and `y` axis. `x` is horizontal or the "width", `y` is vertical or the "height" of an object. Usually you work with numbers which equal to pixel (e.g. `100` is 100px on your screen). You can also use `%` instead of pixel. 
+In P5.js you work with a `x` and `y` axis. `x` is horizontal or the "width", `y` is vertical or the "height" of an object. Usually you work with numbers which equal to pixel (e.g. `100` is 100px on your screen). You can also use `%` instead of pixel. For working with retina displays it's usefull to add `pixelDensity(1);` to the setup. 
 
 ```
 createCanvas(720, 400); //canvas is 720 x 400 px
+pixelDensity(1); //takes care of hi-res retina displays
 ```
 
 ```
