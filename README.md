@@ -52,7 +52,7 @@ This one will execute once at the beginning. You create your canvas here and nee
 
 ```
 function setup() {
-	createCanvas(720, 400);
+  createCanvas(720, 400);
 }
 ```
 
@@ -60,7 +60,7 @@ This one executes 60 times a second (loop). This loop makes it possible, that yo
 
 ```
 function draw() {
-	rect(10, 20, 50, 50);
+  rect(10, 20, 50, 50);
 }
 ```
 ### 2. Coordinate system and units of measure:
@@ -124,13 +124,13 @@ Variables have a scope. This means, that where you declare the variable also def
 var size = 100; // at the top of the file makes it useable everywhere (global)
 
 function setup() {
-	var secondSize = 200; // variable INSIDE a function
-	ellipse(0, 0, secondSize, secondSize); // useable ONLY INSIDE the function
+  var secondSize = 200; // variable INSIDE a function
+  ellipse(0, 0, secondSize, secondSize); // useable ONLY INSIDE the function
 }
 
 function draw() {
-	rect(0, 0, size, size); // you can use the global variable here
-	ellipse(0, 0, secondSize, secondSize); // not useable OUTSIDE the function
+  rect(0, 0, size, size); // you can use the global variable here
+  ellipse(0, 0, secondSize, secondSize); // not useable OUTSIDE the function
 }
 
 ```
@@ -167,7 +167,7 @@ If you want to handle many similar things at once, the "for loop" is the weapon 
 
 ```
 for (var i = 0; i < 100; i = i + 1) {
-	rect(0, 0, 100, 100);
+  rect(0, 0, 100, 100);
 }
 ```
 This code draws 100 rectangles on the same position. Cool, right? Keep reading!
@@ -178,18 +178,21 @@ Usually you need a bit of random to make you code spicy 🔥 at some point. This
 
 ```
 for (var i = 0; i < 100; i = i + 1) {
-	var x = random(0, width);
-	var y = random(0, height);
-	rect(x, y, 100, 100);
+  var x = random(0, width);
+  var y = random(0, height);
+  rect(x, y, 100, 100);
 }
 ```
 
 
 ## Outlook
+We can encourage you to check out the following resources:
 
 [Daniel Shiffman - creative coding guru](https://shiffman.net/)
 
 [Learn more from the P5.js website!](https://p5js.org/learn/)
+
+[Official P5.js Forum](https://discourse.processing.org/c/p5js)
 
 [ml5.js - Friendly Machine Learning for the Web.](https://ml5js.org/)
 
